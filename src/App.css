@@ -1,4 +1,4 @@
-:root {
+* {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -6,7 +6,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
-html, body, #root, .App {
+html,
+body,
+#root,
+.App {
   min-width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
@@ -21,4 +24,23 @@ html, body, #root, .App {
   justify-content: center;
 
   background-color: #222222;
+  color: #FFE8D9;
+}
+
+header {
+  text-align: center
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+header h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 700;
+  font-size: 4.5rem;
+  margin: 0;
 }

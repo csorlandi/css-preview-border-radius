@@ -15,7 +15,10 @@ html, body, #root, .App {
 }
 
 .App {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: #222222;
 }

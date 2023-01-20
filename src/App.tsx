@@ -35,27 +35,40 @@ function App() {
 
       <section>
         <span>border-radius:</span>
-        <span>
-          {radiusValues['top-left-radius'] > 0
-            ? `${radiusValues['top-left-radius']}px`
-            : radiusValues['top-left-radius']}
-        </span>
-        <span>
-          {radiusValues['top-right-radius'] > 0
-            ? `${radiusValues['top-right-radius']}px`
-            : radiusValues['top-right-radius']}
-        </span>
-        <span>
-          {radiusValues['bottom-left-radius'] > 0
-            ? `${radiusValues['bottom-left-radius']}px`
-            : radiusValues['bottom-left-radius']}
-        </span>
-        <span>
-          {radiusValues['bottom-right-radius'] > 0
-            ? `${radiusValues['bottom-right-radius']}px`
-            : radiusValues['bottom-right-radius']}
-          ;
-        </span>
+        {radiusValues['top-left-radius'] === radiusValues['top-right-radius'] &&
+        radiusValues['top-left-radius'] === radiusValues['bottom-left-radius'] &&
+        radiusValues['top-left-radius'] === radiusValues['bottom-right-radius'] ? (
+          <span>
+            {radiusValues['top-left-radius'] > 0
+              ? `${radiusValues['top-left-radius']}px`
+              : radiusValues['top-left-radius']}
+            ;
+          </span>
+        ) : (
+          <>
+            <span>
+              {radiusValues['top-left-radius'] > 0
+                ? `${radiusValues['top-left-radius']}px`
+                : radiusValues['top-left-radius']}
+            </span>
+            <span>
+              {radiusValues['top-right-radius'] > 0
+                ? `${radiusValues['top-right-radius']}px`
+                : radiusValues['top-right-radius']}
+            </span>
+            <span>
+              {radiusValues['bottom-left-radius'] > 0
+                ? `${radiusValues['bottom-left-radius']}px`
+                : radiusValues['bottom-left-radius']}
+            </span>
+            <span>
+              {radiusValues['bottom-right-radius'] > 0
+                ? `${radiusValues['bottom-right-radius']}px`
+                : radiusValues['bottom-right-radius']}
+              ;
+            </span>
+          </>
+        )}
       </section>
 
       <main>

@@ -52,6 +52,7 @@ section {
   width: 100%;
   max-width: 22rem;
   border-radius: 0.375rem;
+  border: 2px dashed transparent;
 
   gap: 0.5rem;
   margin-top: 1.75rem;
@@ -59,12 +60,24 @@ section {
 
   background-color: #626262;
   color: #fff;
+
+  transition: border 0.3s ease;
 }
 
-section span {
+section:hover {
+  cursor: pointer;
+  border: 2px dashed #FFE8D9;
+}
+
+section p {
   font-family: 'Ubuntu Mono', monospace;
   font-size: 1rem;
   line-height: 1.5rem;
+
+  transition: font-size 0.3s ease;
+}
+section:hover p {
+  font-size: 1.05rem;
 }
 
 main {
